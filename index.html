@@ -3,11 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- -----Aos-animate------ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- -----Owl-carousel------ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+
+    <!-- -----Bootstrap-------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"/>
+
+    <!-- -----Font-awesome ------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Home | FME STORE 2.0</title>
     <link rel="stylesheet" href="css/style.css?v=1.1">
 </head>
 <body>
-    
+
+    <!-- -----Offcanvas------ -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        ...
+      </div>
+    </div>
+
     <!-- ----Header----- -->
     <header class="header">
         <div class="content-header">
@@ -16,16 +41,153 @@
                     <a href="index.html" class="logo-fme"><img src="img/fme_white.png"></a>
                 </div>
                 <div class="prod-header">
-                    <a href="#" class="link-tab">Todos los productos</a>
-                    <a href="#" class="link-tab">Producto FME</a>
+                    <a href="#" class="link-tab link-tab-active"><img src="img/cam.png" alt="">Todos los productos</a>
+                    <a href="#" class="link-tab"><img src="img/fmestore.png" alt="">Productos FME</a>
                 </div>
                 <form action="" class="search-header">
                     <input type="search" placeholder="Buscar por productos">
-                    
+                    <i class="fa-solid fa-magnifying-glass"></i>
                 </form>
+            </div>
+            <div class="right-header">
+                <div class="alert-not">
+                    <a href="#" class="notification"><i class="fa-solid fa-bell"></i></a>
+                </div>
+                <div class="dropdown drop-profile">
+                    <a class="btn-drop dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        Sebastián L. <img src="img/avatar.png" alt="">
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Mi cuenta</a></li>
+                        <li><a class="dropdown-item" href="#">Carrito</a></li>
+                        <li><a class="dropdown-item" href="#">Crear una nueva cuenta</a></li>
+                        <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+                    </ul>
+                </div>
+                <div class="canvas">
+                    <a href="#" class="menu-mob" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-bars"></i></a>
+                </div>
             </div>
         </div>
     </header>
 
+    <!-- --------Cover------- -->
+    <div class="back-cover">
+        <div class="cover">
+            <div class="content-cover">
+                <div class="sidebar-left">
+                    <div class="content-sidebar">
+                        <div class="top-sid">
+                            <a href="#" class="fav"><i class="fa-solid fa-bookmark"></i><span class="badge">4</span></a>
+                        </div>
+                        <nav class="navigator">
+                            <a href="#" class="link-navi"><i class="fa-solid fa-shop"></i>Tienda</a>
+                            <a href="#" class="link-navi"><i class="fa-solid fa-ticket"></i>Mayoristas</a>
+                            <a href="#" class="link-navi"><i class="fa-solid fa-star"></i>El combo</a>
+                            <a href="#" class="link-navi"><i class="fa-solid fa-film"></i>Streaming</a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="content-body">
+                    <div class="top-body">
+                        <div class="text-top">
+                            <h1 class="title-top">Hacemos billete o que?</h1>
+                            <p>Con el doble morro sin bajarle ni una raya</p>
+                            <a href="#" class="btn-firm"><i class="fa-solid fa-fire"></i>Firmar</a>
+                        </div>
+                        <div class="img-top">
+    
+                        </div>
+                    </div>
+                    <div class="row-box">
+                        <div class="item-box">
+                            <div class="text-box">
+                                <h2 class="title-box">Camisetas</h2>
+                                <p>BÁSICAS Y PREMIUM</p>
+                                <a href="#" class="btn-"></a>
+                            </div>
+                            <div class="img-box">
+    
+                            </div>
+                        </div>
+                        <div class="item-box">
+                            <div class="text-box">
+                                <h2 class="title-box">Productos FME</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, natus.</p>
+                                <a href="#" class="btn-"></a>
+                            </div>
+                            <div class="img-box">
+                                <img src="img/fmestore.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-box row-box-2">
+                        <div class="item-box">
+                            <div class="img-box">
+                                <img src="img/tenis.png" alt="">
+                            </div>
+                            <div class="text-box">
+                                <h2 class="title-box">Tenis</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, natus.</p>
+                                <a href="#" class="btn-"></a>
+                            </div>
+                        </div>
+                        <div class="item-box">
+                            <div class="img-box">
+                                <img src="img/chompas.png" alt="">
+                            </div>
+                            <div class="text-box">
+                                <h2 class="title-box">Compas</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, natus.</p>
+                                <a href="#" class="btn-"></a>
+                            </div>
+                        </div>
+                        <div class="item-box">
+                            <div class="img-box">
+                                <img src="img/pantalonetas.png" alt="">
+                            </div>
+                            <div class="text-box">
+                                <h2 class="title-box">Pantalonetas</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, natus.</p>
+                                <a href="#" class="btn-"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-right">
+                    <div class="content-right">
+                        <div class="head-right">
+                            <h2>FME Online</h2>
+                        </div>
+                        <div class="item-right">
+                            <div class="img-item">
+                                <img src="img/eventos.png" alt="">
+                            </div>
+                            <div class="text-item">
+                                <h3>Parches medellín</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, in.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----Owl-carousel------ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- -----Bootstrap-------- -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    
+    <!-- -----Aos-animate------ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true
+        });
+        </script>
 </body>
 </html>

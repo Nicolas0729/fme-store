@@ -344,7 +344,6 @@ body a {
     font-size: 20px;
     font-weight: 700;
     color: var(--whiteColor);
-    margin-bottom: 20px;
 }
 .content-body .carousel-prod .title-carousel img {
     width: 30px;
@@ -358,6 +357,20 @@ body a {
     border-radius: 10px;
     background-color: var(--grisOscuro);
     gap: 15px;
+    margin: 30px 0px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.owl-prod .card-prod:hover {
+    transform: scale(1.05);
+    z-index: 99;
+    background-color: var(--grisMedio);
+}
+.owl-prod .card-prod:hover .text-card .link-card {
+    color: var(--whiteColor);
+}
+.owl-prod .card-prod-yellow {
+    background-color: var(--mainColor);
 }
     .card-prod .img-card {
         width: 100%;
@@ -373,6 +386,10 @@ body a {
         object-fit: cover;
         position: relative;
     }
+    .card-prod .img-card .dcto {
+        width: 30px;
+        position: absolute;
+    }
     .card-prod .text-card {
         width: 100%;
         display: flex;
@@ -387,16 +404,8 @@ body a {
         color: var(--whiteColor);
         transition: all 0.3s ease-in-out;
     }
-    .card-prod .text-card .link-card i {
-        transform: rotate(-40deg);
-        transition: all 0.2s ease-in-out;
-    }
-    .card-prod .text-card .link-card:hover {
-        color: var(--mainColor);
-        gap: 15px;
-    }
-    .card-prod .text-card .link-card:hover i {
-        transform: rotate(0deg);
+    .card-prod .text-card .link-black {
+        color: var(--blackColor);
     }
 .content-cover .sidebar-right {
     padding: 20px 20px 20px 0px;
@@ -504,3 +513,92 @@ body a {
             font-size: 13px;
             color: var(--textColor);
         }
+/* ------Offcanvas-bottom----- */
+.offcanvas.offcanvas-bottom {
+    height: auto;
+}
+.offcanvas-prod {
+    background-color: var(--blackColor);
+}
+.head-dcto {
+    display: flex;
+    justify-content: center;
+}
+.head-dcto .btn-close {
+    background-color: var(--mainColor);
+    border-radius: 50%;
+    opacity: 1;
+    margin-top: -30px;
+}
+.body-dcto {
+    width: 100%;
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 4px solid var(--mainColor);
+    padding: 0;
+    margin-bottom: 20px;
+}
+.body-dcto .img-dcto {
+    display: flex;
+}
+.body-dcto .img-dcto img {
+    width: 370px;
+    height: 370px;
+    object-fit: cover;
+}
+.body-dcto .text-dcto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 50px;
+}
+.body-dcto .text-dcto h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--whiteColor);
+}
+.body-dcto .text-dcto h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--whiteColor);
+}
+.body-dcto .text-dcto h3 span {
+    font-size: 15px;
+    color: var(--textColor);
+    text-decoration: line-through;
+}
+.body-dcto .text-dcto h4 {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--whiteColor);
+}
+.body-dcto .text-dcto h4 span {
+    color: var(--greenColor);
+}
+.body-dcto .text-dcto h5 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--whiteColor);
+}
+.body-dcto .text-dcto p {
+    font-size: 15px;
+    color: var(--whiteColor);
+}
+.body-dcto .text-dcto .btn-shop {
+    font-size: 15px;
+    font-weight: 700;
+    background-color: var(--mainColor);
+    color: var(--blackColor);
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+.body-dcto .text-dcto .btn-shop:hover {
+    background-color: var(--grisMedio);
+    color: var(--whiteColor);
+}

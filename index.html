@@ -18,11 +18,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>Home | FME STORE 2.0</title>
-    <link rel="stylesheet" href="css/style.css?v=1.2">
+    <link rel="stylesheet" href="css/style.css?v=1.3">
 </head>
 <body>
+    <!-- -----Offcanvas-left--- -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+        </div>
+    </div>
 
-    <!-- -----Offcanvas------ -->
+    <!-- -----Offcanvas-Right----- -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
       <div class="offcanvas-header">
         <h5 id="offcanvasRightLabel">Offcanvas right</h5>
@@ -31,6 +40,26 @@
       <div class="offcanvas-body">
         ...
       </div>
+    </div>
+
+    <!-- -----Offcanvas-bottom----- -->
+    <div class="offcanvas offcanvas-prod offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+    <div class="offcanvas-header head-dcto">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body body-dcto">
+        <div class="img-dcto">
+            <img src="img/prod-05.jpg" alt="">
+        </div>
+        <div class="text-dcto">
+            <h2>Pantaloneta Nike Clásica</h2>
+            <h3>Antes: <span>$ 65.000.00</span></h3>
+            <h4>Ahora: <span>$ 50.000.00</span></h4>
+            <h5>Descripción</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus cum inventore laboriosam eaque nostrum ipsam.</p>
+            <a href="#" class="btn-shop">Añadir al carrito <i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </div>
     </div>
 
     <!-- ----Header----- -->
@@ -78,12 +107,13 @@
                 <div class="sidebar-left">
                     <div class="content-sidebar">
                         <div class="top-sid">
-                            <a href="#" class="fav"><i class="fa-solid fa-bookmark"></i><span class="badge">4</span></a>
+                            <a class="fav" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><i class="fa-solid fa-bookmark"></i><span class="badge">4</span></a>
                         </div>
                         <nav class="navigator">
                             <a href="#" class="link-navi"><i class="fa-solid fa-shop"></i>Tienda</a>
                             <a href="#" class="link-navi"><i class="fa-solid fa-ticket"></i>Mayoristas</a>
                             <a href="#" class="link-navi"><i class="fa-solid fa-star"></i>El combo</a>
+                            <a href="#" class="link-navi"><i class="fa-solid fa-list-music"></i>Play</a>
                             <a href="#" class="link-navi"><i class="fa-solid fa-film"></i>Streaming</a>
                         </nav>
                     </div>
@@ -154,22 +184,23 @@
                         <h2 class="title-carousel"><img src="img/fmestore.png" alt="">Productos recientes</h2>
                         <div class="owl-prod owl-carousel">
                             <div class="card-prod">
-                                <div class="img-card">  
+                                <div class="img-card" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">  
                                     <img src="img/prod-01.jpg" alt="">
                                 </div>
                                 <div class="text-card">
                                     <a href="#" class="link-card">Ver más <i class="fa-solid fa-arrow-right"></i></a>
                                 </div>
                             </div>
-                            <div class="card-prod">
+                            <div class="card-prod card-prod-yellow" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
                                 <div class="img-card">  
                                     <img src="img/prod-02.jpg" alt="">
+                                    <img src="img/dcto.png" alt="" class="dcto">
                                 </div>
                                 <div class="text-card">
-                                    <a href="#" class="link-card">Ver más <i class="fa-solid fa-arrow-right"></i></a>
+                                    <a href="#" class="link-card link-black">Ver más <i class="fa-solid fa-arrow-right"></i></a>
                                 </div>
                             </div>
-                            <div class="card-prod">
+                            <div class="card-prod" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
                                 <div class="img-card">  
                                     <img src="img/prod-03.jpg" alt="">
                                 </div>
@@ -177,7 +208,7 @@
                                     <a href="#" class="link-card">Ver más <i class="fa-solid fa-arrow-right"></i></a>
                                 </div>
                             </div>
-                            <div class="card-prod">
+                            <div class="card-prod" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
                                 <div class="img-card">  
                                     <img src="img/prod-04.jpg" alt="">
                                 </div>
@@ -185,15 +216,16 @@
                                     <a href="#" class="link-card">Ver más <i class="fa-solid fa-arrow-right"></i></a>
                                 </div>
                             </div>
-                            <div class="card-prod">
+                            <div class="card-prod card-prod-yellow" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
                                 <div class="img-card">  
                                     <img src="img/prod-05.jpg" alt="">
+                                    <img src="img/dcto.png" alt="" class="dcto">
                                 </div>
                                 <div class="text-card">
-                                    <a href="#" class="link-card">Ver más <i class="fa-solid fa-arrow-right"></i></a>
+                                    <a href="#" class="link-card link-black">Ver más <i class="fa-solid fa-arrow-right"></i></a>
                                 </div>
                             </div>
-                            <div class="card-prod">
+                            <div class="card-prod" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
                                 <div class="img-card">  
                                     <img src="img/prod-06.jpg" alt="">
                                 </div>

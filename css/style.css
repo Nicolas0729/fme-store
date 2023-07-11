@@ -131,6 +131,36 @@ body a {
         background-color: var(--grisOscuro);
         color: var(--mainColor);
     }
+    .alert-not .drop-menu {
+        background-color: var(--grisMedio);
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .alert-not .drop-menu .item-not {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        border-radius: 10px;
+        padding: 10px;
+        border: 2px solid var(--mainColor);
+        margin-bottom: 10px;
+    }
+    .alert-not .drop-menu .item-not:hover {
+        background-color: var(--grisOscuro);
+    }
+    .alert-not .drop-menu .item-not img {
+        width: 50px;
+    }
+    .alert-not .drop-menu .item-not .title-not {
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--whiteColor);
+    }
+    .alert-not .drop-menu .item-not .title-not span {
+        font-size: 13px;
+        font-weight: 400;
+        color: #acacac;
+    }
     .right-header .drop-profile .btn-drop {
         display: flex;
         align-items: center;
@@ -144,6 +174,25 @@ body a {
         height: 30px;
         object-fit: cover;
         border-radius: 50%;
+    }
+    .right-header .drop-profile .drop-pro {
+        background-color: var(--grisMedio);
+        padding: 0;
+        overflow: hidden;
+    }
+    .right-header .drop-profile .drop-pro .drop-item {
+        font-size: 15px;
+        font-weight: 600;
+        padding: 5px 15px;
+        color: var(--whiteColor);
+        transition: all 0.3s ease-in-out;
+    }
+    .right-header .drop-profile .drop-pro .drop-item i {
+        margin-right: 10px;
+    }
+    .right-header .drop-profile .drop-pro .drop-item:hover {
+        background-color: var(--mainColor);
+        color: var(--blackColor);
     }
     .right-header .canvas {
         display: flex;
@@ -197,8 +246,10 @@ body a {
     }
     .content-sidebar .top-sid .fav .badge {
         background-color: var(--mainColor);
-        font-size: 15px;
-        margin-left: -10px;
+        font-size: 12px;
+        margin-left: -5px;
+        margin-top: -10px;
+        border-radius: 50%;
     }
     .content-sidebar .navigator {
         display: flex;

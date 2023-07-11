@@ -653,3 +653,122 @@ body a {
     background-color: var(--grisMedio);
     color: var(--whiteColor);
 }
+
+/* --------Modal-camisetas-------- */
+.modal-camisetas {
+    max-width: 95%;
+}
+.contenido-modal {
+    background-color: var(--grisOscuro);
+}
+.contenido-modal .modal-header {
+    border-bottom: 0;
+}
+.contenido-modal .modal-header .btn-close {
+    background-color: var(--mainColor);
+    opacity: 1;
+    margin: auto;
+}
+.body-cam {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.row-cam {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+}
+.row-cam .col-cam {
+    width: 100%;
+}
+.row-cam .col-cam .title-cam {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--whiteColor);
+    margin-bottom: 40px;
+}
+.row-cam .col-cam .title-cam img {
+    width: 40px;
+    margin-right: 20px;
+}
+.row-two {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+    .row-two .item-cam {
+        width: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+    }
+    .row-two .prem {
+        border: 2px solid var(--mainColor);
+    }
+    .row-two .item-cam:hover .img-cam img{
+        transform: scale(1.1);
+    }
+    .row-two .item-cam:hover .abs-cam {
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    .item-cam .img-cam {
+        width: 100%;
+        display: flex;
+        overflow: hidden;
+        position: relative;
+    }
+    .item-cam .img-cam img {
+        width: 100%;
+        display: flex;
+        position: relative;
+        transition: all 0.5s ease-in-out;
+    }
+    .item-cam .abs-cam {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.445);
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 200px;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+    }
+    .item-cam .abs-cam .btn-carrito {
+        font-size: 13px;
+        font-weight: 600;
+        padding: 5px 15px;
+        border-radius: 50px;
+        background-color: var(--blackColor);
+        color: var(--whiteColor);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transition: all 0.3s ease-in-out;
+    }
+    .item-cam .abs-cam .btn-carrito:hover {
+        background-color: var(--secundaryColor);
+    }
+    .item-cam .abs-cam .btn-view {
+        font-size: 13px;
+        font-weight: 600;
+        padding: 5px 15px;
+        border-radius: 50px;
+        background-color: var(--mainColor);
+        color: var(--blackColor);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transition: all 0.3s ease-in-out;
+    }
+    .item-cam .abs-cam .btn-view:hover {
+        gap: 15px;
+    }

@@ -183,9 +183,10 @@ body a {
     .right-header .drop-profile .drop-pro .drop-item {
         font-size: 15px;
         font-weight: 600;
-        padding: 5px 15px;
+        padding: 10px 15px;
         color: var(--whiteColor);
         transition: all 0.3s ease-in-out;
+        border-bottom: 1px solid var(--grisOscuro);
     }
     .right-header .drop-profile .drop-pro .drop-item i {
         margin-right: 10px;
@@ -570,6 +571,7 @@ body a {
 }
 .offcanvas-prod {
     background-color: var(--blackColor);
+    z-index: 999999;
 }
 .head-dcto {
     display: flex;
@@ -598,7 +600,7 @@ body a {
 }
 .body-dcto .img-dcto img {
     width: 370px;
-    height: 370px;
+    height: 100%;
     object-fit: cover;
 }
 .body-dcto .text-dcto {
@@ -663,11 +665,17 @@ body a {
 }
 .contenido-modal .modal-header {
     border-bottom: 0;
+
 }
 .contenido-modal .modal-header .btn-close {
     background-color: var(--mainColor);
     opacity: 1;
     margin: auto;
+    position: fixed;
+    z-index: 99;
+    right: 0;
+    left: 0;
+    border-radius: 50%;
 }
 .body-cam {
     width: 100%;
@@ -676,9 +684,13 @@ body a {
     justify-content: center;
 }
 .row-cam {
-    display: flex;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 100px;
+}
+.row-fme {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 .row-cam .col-cam {
     width: 100%;
@@ -698,6 +710,11 @@ body a {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
+.row-three {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 20px;
+}
     .row-two .item-cam {
         width: 100%;
         border-radius: 10px;
@@ -705,7 +722,7 @@ body a {
         transition: all 0.5s ease-in-out;
     }
     .row-two .prem {
-        border: 2px solid var(--mainColor);
+        border: 4px solid var(--mainColor);
     }
     .row-two .item-cam:hover .img-cam img{
         transform: scale(1.1);
@@ -772,3 +789,139 @@ body a {
     .item-cam .abs-cam .btn-view:hover {
         gap: 15px;
     }
+/* -----offcanvas-right-------- */
+.off-mob {
+    background-color: var(--grisOscuro);
+}
+.head-prof {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.head-prof img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.head-prof .name-prof {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--whiteColor);
+}
+.head-prof .name-prof span {
+    color: var(--mainColor);
+}
+.offcanvas-header .btn-mob {
+    background-color: var(--mainColor);
+    border-radius: 50%;
+    opacity: 1;
+}
+.navi-mob {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.navi-mob .item-navi {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.navi-mob .item-navi .title-mob {
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--whiteColor);
+    margin-bottom: 10px;
+}
+.navi-mob .item-navi .title-mob img {
+    width: 30px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+.navi-mob .item-navi .link-navi {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--whiteColor);
+    border-bottom: 1px solid var(--grisMedio);
+    padding-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+    margin-left: 20px;
+}
+.navi-mob .item-navi .link-navi:hover {
+    color: var(--mainColor);
+    padding-left: 10px;
+}
+.navi-mob .item-navi .link-navi:last-child {
+    border-bottom: 0;
+}
+/* -----Off-cart----- */
+.off-cart {
+    background-color: var(--grisOscuro);
+}
+.title-cart {
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--whiteColor);
+}
+.title-cart i {
+    color: var(--mainColor);
+    margin-right: 10px;
+}
+.head-cart .btn-close {
+    background-color: var(--mainColor);
+    opacity: 1;
+    border-radius: 50%;
+}
+
+/* -----Offcanvas-left---- */
+.products-cart {
+    display: flex;
+    flex-direction: column;
+}
+.products-cart .prod-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.products-cart .prod-item img {
+    width: 80px;
+    border: 2px solid var(--mainColor);
+    border-radius: 10px;
+}
+.products-cart .prod-item .text-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.products-cart .prod-item .text-item p {
+    font-size: 13px;
+    color: var(--textColor);
+}
+.products-cart .prod-item .text-item h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--whiteColor);
+}
+.products-cart .prod-item .text-item .price {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--greenColor);
+}
+.footer-canva {
+    padding: 20px;
+    border-top: 1px solid var(--grisMedio);
+}
+.footer-canva .price-total {
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    border: 2px solid var(--mainColor);
+    color: var(--whiteColor);
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+.footer-canva .price-total span {
+    margin-left: auto;
+    font-weight: 700;
+}

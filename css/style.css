@@ -236,7 +236,7 @@ body a {
 }  
     .content-sidebar .top-sid {
         text-align: center;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
     .content-sidebar .top-sid .fav {
         font-size: 30px;
@@ -244,13 +244,22 @@ body a {
         display: flex;
         align-items: flex-start;
         justify-content: flex-end;
+        margin-bottom: 5px;
+    }
+    .content-sidebar .top-sid .fav img {
+        width: 40px;
+        position: relative;
     }
     .content-sidebar .top-sid .fav .badge {
-        background-color: var(--mainColor);
+        background-color: var(--blackColor);
         font-size: 12px;
-        margin-left: -5px;
         margin-top: -10px;
         border-radius: 50%;
+        position: absolute;
+    }
+    .content-sidebar .top-sid p {
+        font-size: 12px;
+        color: var(--whiteColor);
     }
     .content-sidebar .navigator {
         display: flex;
@@ -262,16 +271,17 @@ body a {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         text-align: center;
         gap: 10px;
         font-size: 12px;
-        color: var(--textColor);
+        color: var(--whiteColor);
         padding-top: 20px;
         border-top: 1px solid var(--secundaryColor);
+        text-align: center;
     }
-    .content-sidebar .navigator .link-navi i {
-        font-size: 20px;
-        color: var(--whiteColor);
+    .content-sidebar .navigator .link-navi img {
+        width: 40px;
     }
 .content-cover .content-body {
     width: 100%;
@@ -306,7 +316,7 @@ body a {
         color: var(--blackColor);
         background-color: var(--mainColor);
         border-radius: 20px;
-        padding: 10px 30px;
+        padding: 5px 30px;
         display: flex;
         align-items: center;
         gap: 10px;
@@ -1035,4 +1045,97 @@ body a {
     .the-combo .abs-combo .drop-fme .item-bio p i {
         font-size: 30px;
         padding: 10px;
+    }
+
+/* -----Modal-stre----- */
+.stre-modal {
+    max-width: 95%;
+}
+.content-stre {
+    background-color: var(--grisOscuro);
+}
+.head-stre {
+    border-bottom: 0;
+}
+.head-stre .title-stre {
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--whiteColor);
+}
+.head-stre .title-stre img {
+    width: 40px;
+    margin-right: 10px;
+}
+.head-stre .btn-close {
+    background-color: var(--mainColor);
+    border-radius: 50%;
+    opacity: 1;
+}
+.body-stre {
+    width: 100%;
+}
+.row-stre {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+.row-stre .card-stre {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.row-stre .card-stre:hover .img-stre .icon-play {
+    opacity: 1;
+}
+.row-stre .card-stre:hover .img-stre .back-video {
+    transform: scale(1.1);
+}
+    .card-stre .img-stre {
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+    }
+    .card-stre .img-stre .back-video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: relative;
+        transition: all 0.3s ease-in-out;
+    }
+    .card-stre .img-stre .icon-play {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        background-color: var(--mainColor);
+        color: var(--blackColor);
+        font-size: 20px;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+    }
+    .card-stre .img-stre .icon-play:hover {
+        background-color: var(--whiteColor);
+        font-size: 25px;
+    }
+    .card-stre .text-stre {
+        background-color: var(--darkColor);
+        padding: 20px;
+    }
+    .card-stre .text-stre h3 {
+        font-size: 15px;
+        font-weight: 700;
+        color: var(--whiteColor);
+        margin-bottom: 10px;
+    }
+    .card-stre .text-stre p {
+        font-size: 12px;
+        color: var(--textColor);
     }

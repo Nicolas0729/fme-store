@@ -338,23 +338,28 @@
 
     <!-- -----Offcanvas-bottom----- -->
     <div class="offcanvas offcanvas-prod offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-    <div class="offcanvas-header head-dcto">
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body body-dcto">
-        <div class="img-dcto">
-            <img src="img/prod-05.jpg" alt="">
+        <div class="offcanvas-header head-dcto">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="text-dcto">
-            <h2>Pantaloneta Nike Clásica</h2>
-            <h3>Antes: <span>$ 65.000.00</span></h3>
-            <h4>Ahora: <span>$ 50.000.00</span></h4>
-            <h5>Descripción</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus cum inventore laboriosam eaque nostrum ipsam.</p>
-            <a href="#" class="btn-shop">Añadir al carrito <i class="fa-solid fa-cart-shopping"></i></a>
+        <div class="offcanvas-body body-dcto">
+            <div class="prod-dcto">
+                <div class="img-dcto">
+                    <img src="img/prod-05.jpg" alt="">
+                </div>
+                <div class="text-dcto">
+                    <h2>Pantaloneta nike</h2>
+                    <h4>Precio: <span>$ 69.999.00</span></h4>
+                    <span class="cant">Cantidad: <input type="number" min="1" max="100" placeholder="1"></span>
+                    <h5>Descripción: <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus cum inventore laboriosam eaque nostrum ipsam.</span></h5>
+                    <div class="bot-dcto">
+                        <a href="#" class="btn-shop">Añadir al carrito <i class="fa-solid fa-cart-shopping"></i></a>
+                        <a href="#" class="btn-shop">Comprar <i class="fa-solid fa-bag-shopping"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    </div>
+        </div>
+    
 
     <!-- -----Offcanvas-bottom-camisetas----- -->
     <div class="offcanvas offcanvas-prod offcanvas-bottom" tabindex="-1" id="offcanvasBottom2" aria-labelledby="offcanvasBottom2Label">
@@ -464,7 +469,7 @@
     </div>
 
     <!-- ----Header----- -->
-    <header class="header">
+    <header class="header" data-aos="fade-down" data-aos-duration="800">
         <div class="content-header">
             <div class="left-header">
                 <div class="logo-header">
@@ -480,6 +485,12 @@
                 </form>
             </div>
             <div class="right-header">
+                <div class="social-header">
+                    <a href="https://www.facebook.com/fmestoremedellin" class="red-social"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/storefme/" class="red-social"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@storefme?is_from_webapp=1&sender_device=pc" class="red-social"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.youtube.com/@fme2286" class="red-social"><i class="fa-brands fa-youtube"></i></a>
+                </div>
                 <div class="alert-not">
                     <div class="dropdown drop-not">
                         <a class="btn notification" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
@@ -535,20 +546,20 @@
                 <div class="sidebar-left">
                     <div class="content-sidebar">
                         <div class="top-sid">
-                            <a class="fav" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"><img src="img/carrito-shop.png" alt=""><span class="badge">4</span></a>
+                            <a class="fav" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" data-aos="fade-up" data-aos-duration="500"><img src="img/carrito-shop.png" alt=""><span class="badge">4</span></a>
                             <p>Carrito</p>
                         </div>
                         <nav class="navigator">
                             <!-- <a href="#" class="link-navi"><img src="img/shop-f.png" alt="">Tienda</a> -->
-                            <a href="#" class="link-navi"><img src="img/mayorista.png" alt="">Mayoristas</a>
-                            <a href="#" class="link-navi" data-bs-toggle="modal" data-bs-target="#exampleModal3"><img src="img/combo.png" alt="">El combo</a>
-                            <a href="#" class="link-navi" data-bs-toggle="modal" data-bs-target="#exampleModalStre"><img src="img/strem.png" alt="">Streaming</a>
+                            <a href="#" class="link-navi" data-aos="fade-up" data-aos-duration="700"><img src="img/mayorista.png" alt="">Mayoristas</a>
+                            <a href="#" class="link-navi" data-bs-toggle="modal" data-bs-target="#exampleModal3" data-aos="fade-up" data-aos-duration="900"><img src="img/combo.png" alt="">El combo</a>
+                            <a href="#" class="link-navi" data-bs-toggle="modal" data-bs-target="#exampleModalStre" data-aos="fade-up" data-aos-duration="1200"><img src="img/strem.png" alt="">Streaming</a>
                         </nav>
                     </div>
                 </div>
                 <div class="content-body">
                     <div class="row-box">
-                        <div class="item-box">
+                        <div class="item-box" data-aos="fade-up" data-aos-duration="700">
                             <div class="text-box">
                                 <h2 class="title-box">Camisetas</h2>
                                 <p>Lorem ipsum, dolor sit amet.</p>
@@ -558,7 +569,7 @@
                                 <img src="img/camisetas-fme.png" alt="">
                             </div>
                         </div>
-                        <div class="item-box">
+                        <div class="item-box" data-aos="fade-up" data-aos-duration="700">
                             <div class="text-box">
                                 <h2 class="title-box">Busos</h2>
                                 <p>Lorem ipsum dolor sit amet.</p>
@@ -568,7 +579,7 @@
                                 <img src="img/chompas-fme.png" alt="">
                             </div>
                         </div>
-                        <div class="item-box">
+                        <div class="item-box" data-aos="fade-up" data-aos-duration="1000">
                             <div class="text-box">
                                 <h2 class="title-box">Sudaderas</h2>
                                 <p>Lorem ipsum, dolor sit amet.</p>
@@ -578,7 +589,7 @@
                                 <img src="img/sudadera-f.png" alt="">
                             </div>
                         </div>
-                        <div class="item-box">
+                        <div class="item-box" data-aos="fade-up" data-aos-duration="1000">
                             <div class="text-box">
                                 <h2 class="title-box">Tenis</h2>
                                 <p>Lorem ipsum dolor sit amet.</p>
@@ -646,7 +657,7 @@
                     </div>
                 </div>
                 <div class="sidebar-right">
-                    <div class="content-right">
+                    <div class="content-right" data-aos="fade-up" data-aos-duration="800">
                         <div class="head-right">
                             <h2><img src="img/Leo.png" alt="">FME Online</h2>
                         </div>
@@ -711,6 +722,60 @@
             </div>
         </div>
     </div>
+
+    <!-- ------Footer------ -->
+    <footer class="footer">
+        <div class="content-footer">
+            <div class="col-footer">
+                <a href="#" class="logo-footer"><img src="img/fmestore.png" alt=""></a>
+            </div>
+            <div class="col-footer">
+                <p>Nuestra pasión por la moda y la cultura urbana nos impulsa a seleccionar 
+                    cuidadosamente.</p>
+                <div class="social-footer">
+                    <a href="https://www.facebook.com/fmestoremedellin" class="icon-social"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/storefme/" class="icon-social"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@storefme?is_from_webapp=1&sender_device=pc" class="icon-social"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.youtube.com/@fme2286" class="icon-social"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="col-footer">
+                <h3 class="title-footer">FME Online</h3>
+                <a href="#" class="link-footer">Parches medellín</a>
+                <a href="#" class="link-footer">Eventos</a>
+                <a href="#" class="link-footer">Retos</a>
+            </div>
+            <div class="col-footer">
+                <h3 class="title-footer">Promociones</h3>
+                <a href="#" class="link-footer">Productos FME</a>
+                <a href="#" class="link-footer">Marcas</a>
+                <a href="#" class="link-footer">Combos</a>
+            </div>
+            <div class="col-footer">
+                <h3 class="title-footer">Sobre nosotros</h3>
+                <a href="#" class="link-footer">El combo</a>
+                <a href="#" class="link-footer">Ubicación</a>
+                <a href="#" class="link-footer">Contacto</a>
+            </div>
+            <div class="col-footer">
+                <h3 class="title-footer">Metodos de pago</h3>
+                <div class="row-pay">
+                    <span class="icon-pay"><i class="fa-brands fa-cc-visa"></i></span>
+                    <span class="icon-pay"><i class="fa-brands fa-cc-mastercard"></i></span>
+                    <span class="icon-pay"><i class="fa-brands fa-cc-paypal"></i></span>
+                    <span class="icon-pay"><i class="fa-brands fa-cc-amex"></i></span>
+                </div>
+                <p>Pagos seguros en cualquier de estos metodos de pago</p>
+            </div>
+        </div>
+        <div class="copy">
+            <p>© Todos los derechos reservados por Laooz Studios - 2023</p>
+            <div class="right-copy">
+                <a href="#" class="link-copy">Política de privacidad</a>
+                <a href="#" class="link-copy">Términos y condiciones</a>
+            </div>
+        </div>
+    </footer>
 
 
     <!-- -----Owl-carousel------ -->

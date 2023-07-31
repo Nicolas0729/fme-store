@@ -229,14 +229,14 @@ body a {
 /* ------Cover----- */
 .back-cover {
     width: 100%;
-    background-image: url(../img/malla-fme.PNG);
+    background-image: url(../img/grafitti.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 .cover {
     width: 100%;
-    background-color: #000000b2;
+    background-color: #000000ec;
 }
 .cover .content-cover {
     width: 100%;
@@ -1620,4 +1620,10 @@ body a {
     font-size: 30px;
     font-weight: 700;
     color: var(--blackColor);
+}
+
+/* -----Form-login-register------ */
+.log {
+    width: 100%;
+    min-height: 100vh;
 }

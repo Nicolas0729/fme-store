@@ -64,6 +64,7 @@ body a {
 }
 .content-header .left-header {
     display: flex;
+    align-items: center;
     gap: 20px;
 }
     .left-header .logo-header {
@@ -71,16 +72,20 @@ body a {
         align-items: center;
     }
     .left-header .logo-header .logo-fme img {
-        width: 100px;
+        width: 60px;
+        margin-bottom: -40px;
     }
     .left-header .prod-header {
+        height: 40px;
         display: flex;
         align-items: center;
         background-color: var(--grisOscuro);
-        border-radius: 15px;
+        border-radius: 50px;
         margin-left: 100px;
+        overflow: hidden;
     }
     .left-header .prod-header .link-tab {
+        height: 40px;
         font-size: 13px;
         font-weight: 600;
         padding: 10px 10px;
@@ -88,7 +93,7 @@ body a {
         align-items: center;
         gap: 10px;
         color: var(--textColor);
-        border-radius: 15px;
+        border-radius: 50px;
         transition: all 0.3s ease-in-out;
     }
     .left-header .prod-header .link-tab:hover {
@@ -98,9 +103,16 @@ body a {
         background-color: var(--secundaryColor);
         color: var(--whiteColor);
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 50px;
     }
     .left-header .prod-header .link-tab img {
-        width: 15px;
+        width: auto;
+        height: 100%;
+        object-fit: contain;
+    }
+    .left-header .prod-header .link-tab .img-fmee {
+        width: 50px;
+        object-fit: contain;
     }
     .left-header .search-header {
         display: flex;
@@ -109,6 +121,7 @@ body a {
     }
     .left-header .search-header input[type="search"] {
         width: 300px;
+        height: 40px;
         position: relative;
         font-size: 13px;
         padding: 10px 35px 10px 15px;
@@ -252,7 +265,7 @@ body a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 100px 15px 25px 15px;
+    padding: 140px 15px 25px 15px;
     position: sticky;
     top: 0px;
 }  
@@ -301,6 +314,10 @@ body a {
         padding-top: 20px;
         border-top: 1px solid var(--secundaryColor);
         text-align: center;
+    }
+    .content-sidebar .navigator .link-navi:first-child {
+        padding-top: 0px;
+        border-top: 0px;
     }
     .content-sidebar .navigator .link-navi img {
         width: 40px;
